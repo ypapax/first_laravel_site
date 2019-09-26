@@ -20,7 +20,8 @@ Route::get('/', function () {
     return view('welcome', [
         'tasks' => $tasks,
         'foo' => 'bar',
-        'name' => request('name')
+        'name' => request('name'),
+        'no_escape' => '<script>alert("no_escape")</script>',
     ]);
 });
 
