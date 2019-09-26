@@ -18,7 +18,8 @@ Route::get('/', function () {
         'Go to work',
     ];
     return view('welcome', [
-        'tasks' => $tasks
+        'tasks' => $tasks,
+        'foo' => 'bar'
     ]);
 });
 

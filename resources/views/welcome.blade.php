@@ -3,7 +3,7 @@
     Welcome
 @endsection
 @section('content')
-    <h1>Welcome</h1>
+    <h1>Welcome {{$foo}}</h1>
     <ul>
 			<?php foreach ($tasks as $task) : ?>
         <li><?= $task; ?></li>
