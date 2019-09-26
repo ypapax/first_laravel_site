@@ -14,4 +14,8 @@ queryStr(){
   curl http://localhost:8000/?name=Goodwin
 }
 
+controller(){
+  php artisan make:controller PagesController
+}
+
 "$@"
