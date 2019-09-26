@@ -19,7 +19,8 @@ Route::get('/', function () {
     ];
     return view('welcome', [
         'tasks' => $tasks,
-        'foo' => 'bar'
+        'foo' => 'bar',
+        'name' => request('name')
     ]);
 });
 

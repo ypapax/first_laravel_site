@@ -10,4 +10,8 @@ dev(){
   php artisan serve
 }
 
+queryStr(){
+  curl http://localhost:8000/?name=Goodwin
+}
+
 "$@"
