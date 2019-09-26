@@ -17,12 +17,10 @@ Route::get('/', function () {
         'Go to the market',
         'Go to work',
     ];
-    return view('welcome', [
-        'tasks' => $tasks,
-        'foo' => 'bar',
-        'name' => request('name'),
-        'no_escape' => '<script>alert("no_escape")</script>',
-    ]);
+    return view('welcome')
+        ->withTasks($tasks)
+        ->withFoo('bar')
+        ->withName(request('name'));
 });
 
 
